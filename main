@@ -124,7 +124,7 @@ function serverhop()
 				end end end end)
 end
 
-function redirect(Number)
+function forceredirect(Number)
 	game:GetService("TeleportService"):Teleport(tostring(Number), game.Players.LocalPlayer)
 end
 
