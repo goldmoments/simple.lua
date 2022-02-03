@@ -26,6 +26,4 @@ spin()  -- Makes you spin
 unspin() -- Stops spinning you
 sit() -- Sits you
 unsit() -- Unsits you
-loopsit() -- Loopsits you
-loopunsit() -- Unloopsits you
 -------------------------------
