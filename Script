@@ -1,0 +1,10 @@
+--[[
+Welcome to simple.lua!
+
+Put your code under the loadstring.
+
+
+Documentation: https://raw.githubusercontent.com/goldmoments/simple.lua/main/Documentation
+]]--
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/goldmoments/simple.lua/main/main'))()
