@@ -26,4 +26,8 @@ spin()  -- Makes you spin
 unspin() -- Stops spinning you
 sit() -- Sits you
 unsit() -- Unsits you
+
+rejoin() -- Rejoins you
+serverhop() -- Puts you in a different server
+forceredirect(PlaceId) -- Forces you to redirect to another game
 -------------------------------
