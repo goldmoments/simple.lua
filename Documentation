@@ -3,11 +3,11 @@ simple.lua Documentation
 -------------------------------
 Console
 
-loopprint("Text") -- Spams the normal message in the ()'s in console [Press F9 to see it]
-loopwarn("Text") -- Spams the warning message in the ()'s in console [Press F9 to see it]
-looperror("Text") -- Spams the error message in the ()'s in console [Press F9 to see it]
-loopwarning("Text") -- Spams the warning message in the ()'s in console [Press F9 to see it]
-warning("Text") -- Puts a warning message in the ()'s in console [Press F9 to see it]
+loopprint("Text") -- Spams the normal message in the ()'s in console [ Press F9 to see it ]
+loopwarn("Text") -- Spams the warning message in the ()'s in console [ Press F9 to see it ]
+looperror("Text") -- Spams the error message in the ()'s in console [ Press F9 to see it ]
+loopwarning("Text") -- Spams the warning message in the ()'s in console [ Press F9 to see it ]
+warning("Text") -- Puts a warning message in the ()'s in console [ Press F9 to see it ]
 -------------------------------
 Chat
 
@@ -30,5 +30,5 @@ unsit() -- Unsits you
 rejoin() -- Rejoins you
 serverhop() -- Puts you in a different server
 forceredirect(PlaceId) -- Forces you to redirect to another game
-notification(title, content) -- Makes a standard roblox notification [Example: notification("Hello!", "Powered by simple.lua")
+notification(title, content) -- Makes a standard roblox notification [ Example: notification("Hello!", "Powered by simple.lua") ]
 -------------------------------
