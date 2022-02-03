@@ -3,7 +3,7 @@ if syn then
 	queue_on_teleport = syn.queue_on_teleport
 	request = syn.request
 else
-warn("simple.lua | WARNING: Unsupported Exploit, some features may not work.")
+	warn("simple.lua | WARNING: Unsupported Exploit, some features may not work.")
 end
 
 -- Check if already executed
@@ -86,6 +86,8 @@ function jump(Number)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = tostring(Number)
 end
 
+local playerteleport = game.Players.LocalPlayer.Character.HumanoidRootPart
+
 function spin()
 	if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyAngularVelocity") then
 		game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyAngularVelocity"):Destroy()
@@ -131,9 +133,9 @@ function forceredirect(Number)
 end
 
 function notification(Title, Content)
-game.StarterGui:SetCore("SendNotification", {
+	game.StarterGui:SetCore("SendNotification", {
 		Title = tostring(Title);
 		Text = tostring(Content);
-	Duration = "7";
+		Duration = "7";
 	})
-	end
+end
