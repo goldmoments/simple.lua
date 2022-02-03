@@ -2,6 +2,8 @@ repeat wait() until game:IsLoaded()
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
 	request = syn.request
+else
+warn("simple.lua | Unsupported Exploit")
 end
 
 -- Check if already executed
