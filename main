@@ -86,7 +86,7 @@ function jump(Number)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = tostring(Number)
 end
 
-local playerteleport = game.Players.LocalPlayer.Character.HumanoidRootPart
+local PlayerTP = game.Players.LocalPlayer.Character.HumanoidRootPart
 
 function spin()
 	if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyAngularVelocity") then
