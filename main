@@ -3,7 +3,7 @@ if syn then
 	queue_on_teleport = syn.queue_on_teleport
 	request = syn.request
 else
-warn("simple.lua | Unsupported Exploit")
+warn("simple.lua | WARNING: Unsupported Exploit, some features may not work.")
 end
 
 -- Check if already executed
