@@ -26,6 +26,8 @@ spin()  -- Makes you spin, if you already have spin it removes it
 unspin() -- Stops spinning you
 sit() -- Sits you
 unsit() -- Unsits you
+-------------------------------
+Game [LocalPlayer]
 
 rejoin() -- Rejoins you
 serverhop() -- Puts you in a different server
