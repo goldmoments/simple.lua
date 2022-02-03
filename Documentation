@@ -3,16 +3,16 @@ simple.lua Documentation
 -------------------------------
 Console
 
-loopprint("Text") -- Spams the normal message in the ()'s in console [ Press F9 to see it ]
-loopwarn("Text") -- Spams the warning message in the ()'s in console [ Press F9 to see it ]
-looperror("Text") -- Spams the error message in the ()'s in console [ Press F9 to see it ]
-loopwarning("Text") -- Spams the warning message in the ()'s in console [ Press F9 to see it ]
-warning("Text") -- Puts a warning message in the ()'s in console [ Press F9 to see it ]
+loopprint("Text") -- Spams the normal message in the (" ")'s in console [ Press F9 to see it ]
+loopwarn("Text") -- Spams the warning message in the (" ")'s in console [ Press F9 to see it ]
+looperror("Text") -- Spams the error message in the (" ")'s in console [ Press F9 to see it ]
+loopwarning("Text") -- Spams the warning message in the (" ")'s in console [ Press F9 to see it ]
+warning("Text") -- Puts a warning message in the (" ")'s in console [ Press F9 to see it ]
 -------------------------------
 Chat
 
-chat("Text") -- Makes you chat the text inside the ()'s
-spamchat("Text") -- Makes you spam chat the text inside the ()'s
+chat("Text") -- Makes you chat the text inside the (" ")'s
+spamchat("Text") -- Makes you spam chat the text inside the (" ")'s
 -------------------------------
 Discord
 
