@@ -22,6 +22,7 @@ LocalPlayer
 
 speed(Number) -- Sets your speed to the number in the ()'s
 jump(Number) -- Sets your jump power to the number in the ()'s
+playerteleport.CFrame = CFrame.new(Position) -- Teleports you to the position in the ()'s
 spin()  -- Makes you spin, if you already have spin it removes it
 unspin() -- Stops spinning you
 sit() -- Sits you
