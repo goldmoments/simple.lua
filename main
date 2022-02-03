@@ -108,3 +108,30 @@ end
 function unsit()
 	game.Players.LocalPlayer.Character.Humanoid.Sit = false
 end
+
+function rejoin()
+	game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
+end
+
+function serverhop()
+	pcall(function()
+		for i = 1,9 do 
+			local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
+			local ServersToTP = HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+			for _, s in pairs(ServersToTP.data) do
+				if s.playing ~= s.maxPlayers then
+					TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
+				end end end end)
+end
+
+function redirect(Number)
+	game:GetService("TeleportService"):Teleport(tostring(Number), game.Players.LocalPlayer)
+end
+
+function notification(Title, Content)
+game.StarterGui:SetCore("SendNotification", {
+		Title = tostring(Title);
+		Text = tostring(Content);
+	Duration = "7";
+	})
+	end
