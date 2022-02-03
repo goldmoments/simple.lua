@@ -1,0 +1,122 @@
+repeat wait() until game:IsLoaded()
+if syn then
+	queue_on_teleport = syn.queue_on_teleport
+	request = syn.request
+end
+
+-- Check if already executed
+if game:GetService("CoreGui"):FindFirstChild(game.Players.LocalPlayer.Name.."-power.lua") then
+else
+	warn("Powered by simple.lua | Made by tabz on forum.robloxscripts.com")
+	local check = Instance.new("Texture")
+	check.Name = game.Players.LocalPlayer.Name.."-power.lua"
+	check.Parent = game:GetService("CoreGui")
+end
+
+-- Print Functions
+function loopprint(Content)
+	while wait() do
+		print(tostring(Content))
+	end
+end
+
+-- Warning Functions
+function loopwarn(Content)
+	while wait() do
+		warn(tostring(Content))
+	end
+end
+
+function loopwarning(Content)
+	while wait() do
+		warn(tostring(Content))
+	end
+end
+
+function warning(Content)
+	warn(tostring(Content))
+end
+
+-- Error Functions
+function looperror(Content)
+	while wait() do
+		error(tostring(Content))
+	end
+end
+
+-- Chat Functions
+function chat(Content)
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tostring(Content), "All")
+end
+
+function spamchat(Content)
+	while wait() do
+		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tostring(Content), "All")
+	end
+end
+
+-- Discord Functions
+function discordinvite(DiscordCode)
+	syn.request(
+		{
+			Url = 'http://127.0.0.1:6463/rpc?v=1',
+			Method = 'POST',
+			Headers = {
+				['Content-Type'] = 'application/json',
+				['origin'] = 'https://ptb.discord.com',
+			},
+			Body = game:GetService('HttpService'):JSONEncode({
+				['args'] = {
+					['code'] = tostring(DiscordCode),
+				},
+				['cmd'] = 'INVITE_BROWSER',
+				['nonce'] = 'YOU'
+			})
+		})
+end
+
+-- LocalPlayer Functions
+function speed(Number)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tostring(Number)
+end
+
+function jump(Number)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = tostring(Number)
+end
+
+function spin()
+	if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyAngularVelocity") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyAngularVelocity"):Destroy()
+	else
+		local BodyAngularVelocity = Instance.new("BodyAngularVelocity")
+		BodyAngularVelocity.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+		BodyAngularVelocity["P"] = 1250
+	end
+end
+
+function unspin()
+	if game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyAngularVelocity") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyAngularVelocity"):Destroy()
+	else
+	end
+end
+
+function sit()
+	game.Players.LocalPlayer.Character.Humanoid.Sit = true
+end
+
+function unsit()
+	game.Players.LocalPlayer.Character.Humanoid.Sit = false
+end
+
+function loopsit()
+	while wait() do
+		game.Players.LocalPlayer.Character.Humanoid.Sit = true
+	end
+end
+
+function loopunsit()
+	while wait() do
+		game.Players.LocalPlayer.Character.Humanoid.Sit = false
+	end
+end
