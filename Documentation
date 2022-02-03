@@ -30,4 +30,5 @@ unsit() -- Unsits you
 rejoin() -- Rejoins you
 serverhop() -- Puts you in a different server
 forceredirect(PlaceId) -- Forces you to redirect to another game
+notification(title, content) -- Makes a standard roblox notification [Example: notification("Hello!", "Powered by simple.lua")
 -------------------------------
