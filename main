@@ -108,15 +108,3 @@ end
 function unsit()
 	game.Players.LocalPlayer.Character.Humanoid.Sit = false
 end
-
-function loopsit()
-	while wait() do
-		game.Players.LocalPlayer.Character.Humanoid.Sit = true
-	end
-end
-
-function loopunsit()
-	while wait() do
-		game.Players.LocalPlayer.Character.Humanoid.Sit = false
-	end
-end
