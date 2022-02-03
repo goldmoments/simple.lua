@@ -1,0 +1,31 @@
+simple.lua Documentation
+
+-------------------------------
+Console
+
+loopprint("Text") -- Spams the normal message in the ()'s in console [Press F9 to see it]
+loopwarn("Text") -- Spams the warning message in the ()'s in console [Press F9 to see it]
+looperror("Text") -- Spams the error message in the ()'s in console [Press F9 to see it]
+loopwarning("Text") -- Spams the warning message in the ()'s in console [Press F9 to see it]
+warning("Text") -- Puts a warning message in the ()'s in console [Press F9 to see it]
+-------------------------------
+Chat
+
+chat("Text") -- Makes you chat the text inside the ()'s
+spamchat("Text") -- Makes you spam chat the text inside the ()'s
+-------------------------------
+Discord
+
+discordinvite("Discord Code") -- Gives you a discord prompt to a server! IT MUST BE THE CODE AFTER discord.gg/
+-------------------------------
+LocalPlayer
+
+speed(Number) -- Sets your speed to the number in the ()'s
+jump(Number) -- Sets your jump power to the number in the ()'s
+spin()  -- Makes you spin
+unspin() -- Stops spinning you
+sit() -- Sits you
+unsit() -- Unsits you
+loopsit() -- Loopsits you
+loopunsit() -- Unloopsits you
+-------------------------------
