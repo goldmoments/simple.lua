@@ -137,16 +137,3 @@ function notification(Title, Content)
 		Duration = "7";
 	})
 end
-
--- LocalPlayer Tool Functions
-function activatetool(ToolName)
-	game.Players.LocalPlayer.Character[tostring(ToolName)]:Activate()
-end
-
-function equiptool(ToolName)
-local backpack = game.Players.LocalPlayer.Backpack
-if string.find(tostring(backpack), ToolName) then
-		print(ToolName)
-		backpack:EquipTool(ToolName)
-	end
-end
