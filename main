@@ -137,6 +137,3 @@ function notification(Title, Content)
 		Duration = "7";
 	})
 end
-
-local localcharacter = game.Players.LocalPlayer.Character
-local localplayer = game.Players.LocalPlayer
