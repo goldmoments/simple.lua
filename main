@@ -9,7 +9,7 @@ end
 -- Check if already executed
 if game:GetService("CoreGui"):FindFirstChild(game.Players.LocalPlayer.Name.."-power.lua") then
 else
-	warn("Powered by simple.lua | Made by tabz")
+	warn("Powered by simple.lua | Made by tabz\nsimple.lua Discord: discord.gg/DqF9WhehyH")
 	local check = Instance.new("Texture")
 	check.Name = game.Players.LocalPlayer.Name.."-power.lua"
 	check.Parent = game:GetService("CoreGui")
