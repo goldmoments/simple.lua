@@ -34,3 +34,8 @@ serverhop() -- Puts you in a different server
 forceredirect(PlaceId) -- Forces you to redirect to another game
 notification(title, content) -- Makes a standard roblox notification [ Example: notification("Hello!", "Powered by simple.lua") ]
 -------------------------------
+Tools [LocalPlayer]
+
+activatetool("ToolName") -- Activates the tool in the (" ")'s, you must have it equipped
+equiptool("ToolName") -- Equips the tool in the (" ")'s
+unequiptool("ToolName") -- Unequips the tool in the (" ")'s
