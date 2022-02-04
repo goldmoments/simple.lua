@@ -137,3 +137,16 @@ function notification(Title, Content)
 		Duration = "7";
 	})
 end
+
+-- LocalPlayer Tool Functions
+function activatetool(ToolName)
+	game.Players.LocalPlayer.Character[tostring(ToolName)]:Activate()
+end
+
+function equiptool(ToolName)
+	game.Players.LocalPlayer.Backpack[tostring(ToolName)]:Equip()
+end
+
+function unequiptool(ToolName)
+	game.Players.LocalPlayer.Character[tostring(ToolName)]:Unequip()
+end
