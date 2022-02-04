@@ -144,9 +144,9 @@ function activatetool(ToolName)
 end
 
 function equiptool(ToolName)
-	game.Players.LocalPlayer.Backpack:EquipTool(tostring(ToolName))
-end
-
-function unequiptool(ToolName)
-	game.Players.LocalPlayer.Character:EquipTool(tostring(ToolName))
+	local backpack = game.Players.LocalPlayer.Backpack
+	if string.find(backpack, ToolName) then
+		print(ToolName)
+		backpack:EquipTool(ToolName)
+	end
 end
