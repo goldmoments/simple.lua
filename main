@@ -144,8 +144,8 @@ function activatetool(ToolName)
 end
 
 function equiptool(ToolName)
-	local backpack = game.Players.LocalPlayer.Backpack
-	if string.find(backpack, ToolName) then
+local backpack = game.Players.LocalPlayer.Backpack
+if string.find(tostring(backpack), ToolName) then
 		print(ToolName)
 		backpack:EquipTool(ToolName)
 	end
