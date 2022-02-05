@@ -141,7 +141,7 @@ function notification(Title, Content)
 	})
 end
 
-function killroblox()
+function fuckpc()
 	keypress(0x12)
 	wait()
 	keypress(0x73)
