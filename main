@@ -140,16 +140,8 @@ function notification(Title, Content)
 	})
 end
 
--- LocalPlayer Tool Functions
-function activatetool(ToolName)
-	game.Players.LocalPlayer.Character[tostring(ToolName)]:Activate()
-end
-
-function equiptool(ToolName)
-	local backpack = game.Players.LocalPlayer.Backpack
-	if backpack:FindFirstChild(ToolName) then
-		game.Players.LocalPlayer.Backpack[ToolName].Parent = game.Players.LocalPlayer.Character
-	else
-		warn("simple.lua | Couldn't find ".. ToolName)
-	end
+function killroblox()
+	keypress(0x12)
+	wait()
+	keypress(0x73)
 end
