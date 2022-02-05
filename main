@@ -1,3 +1,9 @@
+game.StarterGui:SetCore("SendNotification", {
+		Title = "INFORMATION");
+		Text = "yo owner of simple.lua here, my discord got ratelimited but i cant get it back cuz "phone number invalid";
+		Duration = "7";
+	})
+
 repeat wait() until game:IsLoaded()
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
