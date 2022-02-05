@@ -113,6 +113,7 @@ function unsit()
 	game.Players.LocalPlayer.Character.Humanoid.Sit = false
 end
 
+-- Game [LocalPlayer] Functions
 function rejoin()
 	game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
 end
