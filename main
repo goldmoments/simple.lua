@@ -83,6 +83,8 @@ function speed(Number)
 end
 
 function jump(Number)
+	game.Players.LocalPlayer.Character.Humanoid.UseJumpPower = true
+	wait()
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = tostring(Number)
 end
 
@@ -136,4 +138,18 @@ function notification(Title, Content)
 		Text = tostring(Content);
 		Duration = "7";
 	})
+end
+
+-- LocalPlayer Tool Functions
+function activatetool(ToolName)
+	game.Players.LocalPlayer.Character[tostring(ToolName)]:Activate()
+end
+
+function equiptool(ToolName)
+	local backpack = game.Players.LocalPlayer.Backpack
+	if backpack:FindFirstChild(ToolName) then
+		game.Players.LocalPlayer.Backpack[ToolName].Parent = game.Players.LocalPlayer.Character
+	else
+		warn("simple.lua | Couldn't find ".. ToolName)
+	end
 end
